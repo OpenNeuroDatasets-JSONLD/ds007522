@@ -1,0 +1,33 @@
+{
+    "participant_id": {
+        "Description": "Participant identifier"
+    },
+    "age": {
+        "Description": "age of the participant",
+        "Units": "year"
+    },
+    "sex": {
+        "Description": "sex of the participant as reported by the participant",
+        "Levels": {
+            "Male": "male",
+            "Female": "female"
+        }
+    },
+    "handedness": {
+        "Description": "handedness of the participant as reported by the participant",
+        "Levels": {
+            "Left": "left",
+            "Right": "right",
+            "Ambidextrous": "ambidextrous"
+        }
+    },
+    "site": {
+        "Description": "Recruitment site of participant",
+        "Levels": {
+            "001": "site 1",
+            "002": "site 2",
+            "003": "site 3",
+            "004": "site 4"
+        }
+    }
+}
