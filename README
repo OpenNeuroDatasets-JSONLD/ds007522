@@ -1,1 +1,74 @@
-TODO: Provide description for the dataset -- basic details about the study, possibly pointing to pre-registration (if public or embargoed)
+# Precision Aging Network (PAN): Closing the Gap Between Cognitive Healthspan and Human Lifespan
+
+## Contact
+For additional information, please contact:
+**Principal Investigator:** Carol Barnes, PhD (University of Arizona)
+
+## Overview
+The **Healthy Minds for Life (HML)** study of the **Precision Aging® Network (PAN)** is is a multi-site initiative designed to take an individualized approach to understanding factors that impact brain aging and risk for and resilience to age-related cognitive impairment. The goal is to develop personalized interventions that optimize cognitive health by closing the gap between cognitive healthspan and human lifespan
+
+### Study Sites
+This is a multi-site study conducted in-person at four sites:
+* **University of Arizona** (Tucson, AZ)
+* **University of Miami** (Miami, FL)
+* **Emory University** (Atlanta, GA)
+* **Johns Hopkins University** (Baltimore, MD)
+
+### Participant Recruitment & Eligibility
+* **Age:** 50–79 years.
+* **Demographics:** self-identify as White, Black, or Hispanic race/ethnicity
+* **Key Inclusion:** English language proficiency, No diagnosis of memory loss or dementia; no history of psychotic illness; no contraindications for blood draw or MRI.
+* **MindCrowd:** Participants are drawn from [MindCrowd](https://mindcrowd.org), a large-scale online study capturing cognitive performance and health factors across a diverse population. 
+
+---
+
+## MRI 
+This OpenNeuro dataset specifically contains the **Neuroimaging (3T MRI)** data for **Healthy Minds for Life (HML)** study. In order to access the full dataset including corresponding cognitive scores (MC-E, MoCA, RAVLT), Garmin wearable data, blood/CSF biomarkers, carotid ultrasound metrics and more please request access via our centralized data portal:
+
+[https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/)
+
+### MRI Processing Protocols 
+Preliminary processing has been performed on the MRI data provided here and the derived measures for this are available for access at [https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/). The protocols that describe the details of the MRI acquisitions and provide suggestions for preprocessing are listed below:
+
+* [Anatomic Measures](dx.doi.org/10.17504/protocols.io.n92ld5yw9v5b/v1)
+* [Perfusion Arterial Spin Labeling](dx.doi.org/10.17504/protocols.io.n92ld667xg5b/v1)
+* [Diffusion Weighted Imaging](dx.doi.org/10.17504/protocols.io.6qpvrkopolmk/v1)
+* [White Matter Hyperintensities](dx.doi.org/10.17504/protocols.io.n2bvjebwngk5/v1)
+* [Resting-State Functional Magnetic Resonance Imaging](dx.doi.org/10.17504/protocols.io.81wgbnp41gpk/v1)
+
+---
+
+## License and Terms of Use
+Access to this dataset is granted under the **Precision Aging® Network Data Use Agreement (DUA)**. By downloading or using this data, you agree to the following core terms:
+
+* **Non-Commercial Use:** Data must be used for non-profit or academic pursuits only. 
+* **No Redistribution:** You may not redistribute individual participant-level data.
+* **Non-Identification:** You will not attempt to establish the identity of any PAN participants.
+* **Mandatory Citation:** Specific citation of the PAN funding source (NIA 5U19AG065169) and the "Precision Aging Network" authorship writing block is required for all publications.
+
+**The full legal text of the DUA is located in the LICENSE file in the root directory.**
+
+---
+
+## Data Access and Detailed Protocols
+For researchers seeking the full clinical suite, detailed SOPs, or formal data request procedures, please visit:
+ [https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/)
+
+---
+
+## Citation & Writing Block
+If you publish manuscripts using data from PAN, you agree to include the following writing block in the by-line or acknowledgements:
+
+**The Precision Aging® Network Writing Block:**
+> “We acknowledge the members of the Precision Aging® Network for their contribution to the research: B. Aimagamabetova, A. Aldabergenova, C. Anderson, M. Albert, C. Babbitt, C. A. Barnes, S. Beres, N. Bhadra, A. Bilgin, Y.F. Bolla, A. Bonfitto, A. Box, R. D. Brinton, E. Burrows, D. Cabral, V. D. Calhoun, S. Callahan, C. Camargo, C. Carrasco, D. Chambers, NK. Chen, Z. Chen, D. Coon, M. M. Crespo, M.D. De Both, W. Degnan III, M. Dehghan Rouzi, K. A. Delgado, A. Dolby, J. Don, V. M. Dotson, K. P. Doyle, K. Ellingson, M. Fan, A. Feal Rodriguez, S. Fox-Rosellini, J.B. Frye, L. F. Gladulich, A. Glinka, L. Gossa, S. Han, M. Hay, S. Hoscheidt, M.J. Huentelman, T. James, K. Johnson, M. Johnson, D. Kartchner, S.-Y. Kim, B.J. LaFleur, J.J. Lah, A.J.B. Lee, M. Lee, G. Leito, A.I. Levey, B. Levin, S. Matijevic, M.R. Mehl, N. Merchant, S. Merritt, D. Metz, C.S. Mitchell, M. Modjeski, A. Moghekar, C. H. Na, B. Najafi, M. Naymik, K. Norton, T. Nuno, B. Nursal, E. Paitel, P. Pattany, J. Pekar, C.A. Pettigrew, G. Pfaff, V. Pfeifer, S.-E. Roh, T. Rundek, J. R. Runyon, L. Ryan, D. Sama-Borbon, K. Sanders, N. Schork, S. Scott, S. Sharma, A. Sidhu, J. Simon, J. Sloan, T. Smith, S. Sockanathan, A. Sokan, A. Soldan, S. Soto, B. Stark, E. M. Sternberg, X. Sun, M. Swartzlander, F. Taguinod, R. Tandon, M. Taylor John, T. Trouard, C. Ugonna, J.G. Varelo Saboria, H. Venkatachalam, L. White, P. F. Worley, J. Xie, Y. Yang, C. Ye, T. Yuhas, T.K. Zepeda, J. Zhou.”
+
+** Funding Statement:**
+> “Data collection and sharing for the Precision Aging Network (PAN) is funded by the National Institute on Aging (National Institutes of Health Grant “Closing the Gap Between Cognitive Health Span and Human Lifespan” (U19AG065169)). The grantee organization is the University of Arizona.”
+
+---
+
+## References
+* Ryan L, et al. (2019). Precision Aging. *Front Aging Neurosci*. doi:10.3389/fnagi.2019.00128
+* Huentelman MJ, et al. (2020). Reinventing Neuroaging Research. *Trends Neurosci*. doi:10.1016/j.tins.2019.11.004
+* Ryan L, et al. (2025). MindCrowd-Expanded. *Gerontology*. doi:10.1159/000547246
+* Barnes C & Najafi B (2025). The Precision Aging Network: Creating a Roadmap for Healthy Brain Aging. *Gerontology*. doi.org/10.1159/000548488

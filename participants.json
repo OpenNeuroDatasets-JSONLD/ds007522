@@ -24,10 +24,10 @@
     "site": {
         "Description": "Recruitment site of participant",
         "Levels": {
-            "001": "site 1",
-            "002": "site 2",
-            "003": "site 3",
-            "004": "site 4"
+            "Tucson": "University of Arizona (Tucson, AZ)",
+            "Miami": "University of Miami (Miami, FL)",
+            "Atlanta": "Emory University (Atlanta, GA)",
+            "Baltimore": "Johns Hopkins University (Baltimore, MD)"
         }
     }
 }
