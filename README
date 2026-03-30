@@ -9,10 +9,10 @@ The **Healthy Minds for Life (HML)** study of the **Precision Aging® Network (P
 
 ### Study Sites
 This is a multi-site study conducted in-person at four sites:
-* **University of Arizona** (Tucson, AZ)
-* **University of Miami** (Miami, FL)
-* **Emory University** (Atlanta, GA)
-* **Johns Hopkins University** (Baltimore, MD)
+* **University of Arizona** (`Tucson`, AZ)
+* **University of Miami** (`Miami`, FL)
+* **Emory University** (`Atlanta`, GA)
+* **Johns Hopkins University** (`Baltimore`, MD)
 
 ### Participant Recruitment & Eligibility
 * **Age:** 50–79 years.
@@ -20,38 +20,9 @@ This is a multi-site study conducted in-person at four sites:
 * **Key Inclusion:** English language proficiency, No diagnosis of memory loss or dementia; no history of psychotic illness; no contraindications for blood draw or MRI.
 * **MindCrowd:** Participants are drawn from [MindCrowd](https://mindcrowd.org), a large-scale online study capturing cognitive performance and health factors across a diverse population. 
 
----
 
 ### Study Visit Procedures
 The protocol includes a baseline visit for most participants. For a select number of participants at the University of Arizona a shorter longitudinal follow-up visit 2 years after the baseline visit is conducted. 
-* The BIDS label used for the initial baseline visit is `ses-01`
-* Repeat visits to correct technical issues with the initial baseline visit are labelled `ses-02`, `ses-03` and so on.
-* The BIDS label used for the initial 2-year longitudinal follow-up visit is `ses-follow01` (only available at the moment in the `Tucson` site)
-* Repeat visits to correct technical issues with the initial 2-year follow-up visit are labelled `ses-follow02`, `ses-follow03` and so on.
-
-### Session and Scan Details
-Information about session and scan details are available in the bids hierarchy at `sub-{}/sub-{}_sessions.tsv` and `sub-{}/sub-{}_ses-{}_scans.tsv` respectively
-
-The `_sessions.tsv` file contains the following fields -  `session_notes`, `protocol_check`, `manufacturer_model` and `software_version`. The `session_notes` field is a free text (uncoded) field with information that may be pertinent to the session. This may contain information about the potential quality of the scan, the participant's experience of the scan or other technical issues of note. The last three fields help to uniquely identify the MRI scanner/software used for the acquisition. This allows researchers to identify scanner upgrades.
-
-The `_scans.tsv` file provides the order in which the bids files were obtained during the session. The `acq_time` field has been randomly jittered by a subject-specific factor of between 1 to 15 days to anonymize the subject visit.
-
-### MRI Quality
-Efforts are ongoing to complete as much manual quality control and quality assurance of the provided data as possible. In the meantime, the main source of information on the quality and validity of provided scans is the `_sessions.tsv` and `_scans.tsv` files for each subject and session as detailed above. Where specific scans had to be repeated during the **same** session to correct a technical issue or address patient motion then only the valid scan has been uploaded to avoid multiple runs of the same acquisition in each session.
-
-Where individual scans have been discovered to have issues in a session then in a few cases a second session has been scheduled to try and acquire just that affected scan. These events are documented in the `_sessions.tsv` file and the scans in most cases have been uploaded. Subjects with multiple base sessions e.g. ses-01 and ses-02 or multiple follow-up sessions e.g. follow-01 and follow-02 are an indication that the first session (ses-01 or follow-01) had a scan or series of scans that needed correcting in the second session (ses-02 or ses-follow02).
-
-### Tx Issue at the University of Arizona
-Subject sessions taken over some weeks in the summer of 2025 (between June and mid-October) at the University of Arizona suffered from slight clipping of the Radio Frequency (RF) pulses caused by a fault in a transmission box. These sessions have been excluded from this upload. Most of the affected subjects have been rescanned successfully since the repair of this issue.
-
-### Scanner upgrades
-There have been 2 scanner upgrades to date:
-* In October 2024, University of Miami upgraded from Siemens XA20 to XA50
-* In December 2024, University of Arizona  upgraded from Siemens VE11 to XA30 
-
-### Derived fieldmaps
-The ASL and fMRI acquisitions did not have dedicated fieldmaps acquired to maximize the number of different MRI contrasts collected. Field maps have been derived from the multi-echo T2Star (2xmagnitude, 2xphase) and from the Reverse Phase Encoded dMRI (acq-fmri)
-
 ---
 
 ## PAN Data in this OpenNeuro repository
@@ -71,15 +42,40 @@ Preliminary processing has been performed on the MRI data provided here and the 
 
 ---
 
+### Session and Scan Details
+Information about session and scan details are available in the bids hierarchy at `sub-{}/sub-{}_sessions.tsv` and `sub-{}/sub-{}_ses-{}_scans.tsv` respectively
+
+The `_sessions.tsv` file contains the following fields -  `session_notes`, `protocol_check`, `manufacturer_model` and `software_version`. The `session_notes` field is a free text (uncoded) field with information that may be pertinent to the session. This may contain information about the potential quality of the scan, the participant's experience of the scan or other technical issues of note. The last three fields help to uniquely identify the MRI scanner/software used for the acquisition. This allows researchers to identify scanner upgrades.
+
+The `_scans.tsv` file provides the order in which the bids files were obtained during the session. The `acq_time` field has been randomly jittered by a subject-specific factor of between 1 to 15 days to anonymize the subject visit.
+
+* The BIDS label used for the initial baseline visit is `ses-01`
+* Repeat visits to correct technical issues with the initial baseline visit are labelled `ses-02`, `ses-03` and so on.
+* The BIDS label used for the initial 2-year longitudinal follow-up visit is `ses-follow01` (only available at the moment in the `Tucson` site)
+* Repeat visits to correct technical issues with the initial 2-year follow-up visit are labelled `ses-follow02`, `ses-follow03` and so on.
+
+### MRI Quality
+Efforts are ongoing to complete as much manual quality control and quality assurance of the provided data as possible. In the meantime, the main source of information on the quality and validity of provided scans is the `_sessions.tsv` and `_scans.tsv` files for each subject and session as detailed above. Where specific scans had to be repeated during the **same** session to correct a technical issue or address patient motion then only the valid scan has been uploaded to avoid multiple runs of the same acquisition in each session.
+
+Where individual scans have been discovered to have issues in a session then in a few cases a second session has been scheduled to try and acquire just that affected scan. These events are documented in the `_sessions.tsv` file and the scans in most cases have been uploaded. Subjects with multiple base sessions e.g. ses-01 and ses-02 or multiple follow-up sessions e.g. follow-01 and follow-02 are an indication that the first session (ses-01 or follow-01) had a scan or series of scans that needed correcting in the second session (ses-02 or ses-follow02).
+
+### Tx Issue at the University of Arizona
+Subject sessions taken over some weeks in the summer of 2025 (between June and mid-October) at the University of Arizona suffered from slight clipping of the Radio Frequency (RF) pulses caused by a fault in a transmission box. These sessions have been excluded from this upload. Most of the affected subjects have been rescanned successfully since the repair of this issue.
+
+### Scanner upgrades
+There have been 2 scanner upgrades to date:
+* In October 2024, University of Miami upgraded from Siemens XA20 to XA50
+* In December 2024, University of Arizona  upgraded from Siemens VE11 to XA30 
+
+### Derived fieldmaps
+The ASL and fMRI acquisitions did not have dedicated fieldmaps acquired to maximize the number of different MRI contrasts collected. Field maps have been derived from the multi-echo T2Star (2xmagnitude, 2xphase) and from the Reverse Phase Encoded dMRI (acq-fmri)
+
+---
+
 ## License and Terms of Use
-Access to this dataset is granted under the **Precision Aging® Network Data Use Agreement (DUA)**. By downloading or using this data, you agree to the following core terms:
+The MRI data hosted on this site is made available without restriction under the [Creative Commons Zero (CC0) v1.0 License](https://creativecommons.org/publicdomain/zero/1.0/).
 
-* **Non-Commercial Use:** Data must be used for non-profit or academic pursuits only. 
-* **No Redistribution:** You may not redistribute individual participant-level data.
-* **Non-Identification:** You will not attempt to establish the identity of any PAN participants.
-* **Mandatory Citation:** Specific citation of the PAN funding source (NIA 5U19AG065169) and the "Precision Aging Network" authorship writing block is required for all publications.
-
-**The full legal text of the DUA is located in the LICENSE file in the root directory.**
+Associated datasets hosted on the PAN Data Portal provided at [https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/) are subject to the **Precision Aging® Network Data Use Agreement (DUA)**. Users are responsible for reviewing and complying with those licenses, unless explicitly stated otherwise.
 
 ---
 
