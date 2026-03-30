@@ -1,2 +1,2 @@
 session_id	session_notes	protocol_check	manufacturer_model	software_version
-ses-01	Assume that 1st MPRAGE has more motion artifacts than 2nd. Will need to confirm with visual inspection.	n/a	Skyra	syngo MR E11
+ses-01	MPRAGE repeated because of motion	n/a	Skyra	syngo MR E11

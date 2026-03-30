@@ -267,7 +267,7 @@ sub-HML0307	63.0	Male	Right	Miami
 sub-HML0308	65.0	Male	Right	Tucson
 sub-HML0310	61.0	Male	Right	Atlanta
 sub-HML0311	53.0	Female	Right	Atlanta
-sub-HML0312	53.0	Female	Right	Miami
+sub-HML0312	53.0	Female	Right	Atlanta
 sub-HML0313	61.0	Female	Right	Miami
 sub-HML0314	69.0	Male	Right	Tucson
 sub-HML0315	69.0	Male	Left	Tucson
@@ -498,7 +498,7 @@ sub-HML0586	64.0	Female	Right	Atlanta
 sub-HML0587	63.0	Male	Right	Atlanta
 sub-HML0589	53.0	Male	Left	Baltimore
 sub-HML0590	58.0	Female	Right	Tucson
-sub-HML0592	73.0	n/a	Right	Miami
+sub-HML0592	73.0	Female	Right	Miami
 sub-HML0593	50.0	Female	Right	Miami
 sub-HML0594	53.0	Female	Right	Tucson
 sub-HML0595	68.0	Male	Left	Atlanta
@@ -649,7 +649,7 @@ sub-HML0789	68.0	Female	Right	Atlanta
 sub-HML0790	53.0	Male	Right	Miami
 sub-HML0791	68.0	Male	Right	Atlanta
 sub-HML0793	69.0	Female	Right	Tucson
-sub-HML0794	59.0	n/a	Left	Tucson
+sub-HML0794	59.0	Female	Left	Tucson
 sub-HML0796	54.0	Male	Left	Tucson
 sub-HML0797	70.0	Female	Ambidextrous	Tucson
 sub-HML0798	69.0	Male	Right	Tucson
@@ -682,7 +682,7 @@ sub-HML0835	63.0	Female	Right	Miami
 sub-HML0836	61.0	Male	Ambidextrous	Tucson
 sub-HML0837	56.0	Male	Right	Tucson
 sub-HML0839	55.0	Female	Right	Baltimore
-sub-HML0840	70.0	n/a	Right	Tucson
+sub-HML0840	70.0	Female	Right	Tucson
 sub-HML0842	52.0	Female	Right	Miami
 sub-HML0843	52.0	Female	Right	Miami
 sub-HML0845	78.0	Female	Right	Baltimore
@@ -698,5 +698,5 @@ sub-HML0867	64.0	Male	Right	Atlanta
 sub-HML0869	55.0	Female	Right	Tucson
 sub-HML0871	53.0	Female	Right	Tucson
 sub-HML0883	51.0	Female	Right	Tucson
-sub-HML0887	75.0	n/a	Right	Tucson
+sub-HML0887	75.0	Female	Right	Tucson
 sub-HML0891	63.0	Female	Right	Tucson
