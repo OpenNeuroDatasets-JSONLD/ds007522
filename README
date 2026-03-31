@@ -34,7 +34,7 @@ This OpenNeuro dataset specifically contains just the **Neuroimaging (3T MRI)** 
 For researchers seeking access to associated PAN datasets including MindCrowd tests, demographic and biometric measires, corresponding cognitive scores,, Garmin wearable data, blood/CSF biomarkers and other derived biomarker panels, carotid ultrasound metrics, derived MRI measures, assessments and surveys and much more please request access via the PAN centralized data portal at [https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/). In addition to the datasets mentioned, detailed Standard Operating Protocols (SOP) governing data collection are also available on the portal as well as protocols used for obtained deriving measures.
 
 ### MRI Processing Protocols 
-Preliminary processing has been performed on the MRI data provided here and the derived measures for this are available for access at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. These protocols that describe the details of the MRI acquisitions and provide suggestions for preprocessing are also listed below:
+Preliminary processing has been performed on the MRI data provided here and the derived measures for this are available for access at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. Protocols that describe the details of the MRI acquisitions and provide suggestions for MRI preprocessing are also listed below:
 
 * [Anatomic Measures](dx.doi.org/10.17504/protocols.io.n92ld5yw9v5b/v1)
 * [Perfusion Arterial Spin Labeling](dx.doi.org/10.17504/protocols.io.n92ld667xg5b/v1)
@@ -59,18 +59,18 @@ The `_scans.tsv` file provides the order in which the bids files were obtained d
 ### MRI Quality
 Efforts are ongoing to complete as much manual quality control and quality assurance of the provided data as possible. In the meantime, the main source of information on the quality and validity of provided scans is the `_sessions.tsv` and `_scans.tsv` files for each subject and session as detailed above. Where specific scans had to be repeated during the **same** session to correct a technical issue or address patient motion then only the valid scan has been uploaded to avoid multiple runs of the same acquisition in each session.
 
-Where individual scans have been discovered to have issues in a session then in a few cases a second session has been scheduled to try and acquire just that affected scan. These events are documented in the `_sessions.tsv` file and the scans in most cases have been uploaded. Subjects with multiple base sessions e.g. ses-01 and ses-02 or multiple follow-up sessions e.g. follow-01 and follow-02 are an indication that the first session (ses-01 or follow-01) had a scan or series of scans that needed correcting in the second session (ses-02 or ses-follow02).
+Where individual scans in a session have been discovered to have issues retrospectively then in a few cases a second session has been scheduled to try and acquire just the affected scans. These events are documented in the `_sessions.tsv` file and both the invalid and valid scans have been uploaded. Subjects with multiple base sessions e.g. ses-01 and ses-02 or multiple follow-up sessions e.g. follow-01 and follow-02 are an indication that the previous session (ses-01 or follow-01) had a scan or series of scans that needed correcting in the subsequent session (ses-02 or ses-follow02).
 
 ### Tx Issue at the University of Arizona
-Subject sessions taken over some weeks in the summer of 2025 (between June and mid-October) at the University of Arizona suffered from slight clipping of the Radio Frequency (RF) pulses caused by a fault in a transmission box. These sessions have been excluded from this upload. Most of the affected subjects have been rescanned successfully since the repair of this issue.
+Entire subject sessions taken over some weeks in the summer of 2025 (between June and mid-October) at the University of Arizona suffered from slight clipping of the Radio Frequency (RF) pulses caused by a fault in a transmission box. These sessions have been excluded from this upload. Most of the affected subjects have been re-scanned successfully since the repair of this issue. 
 
 ### Scanner upgrades
 There have been 2 scanner upgrades to date:
 * In October 2024, University of Miami upgraded from Siemens XA20 to XA50
 * In December 2024, University of Arizona  upgraded from Siemens VE11 to XA30 
 
-### Derived fieldmaps
-The ASL and fMRI acquisitions did not have dedicated fieldmaps acquired to maximize the number of different MRI contrasts collected. Field maps have been derived from the multi-echo T2Star (2xmagnitude, 2xphase) and from the Reverse Phase Encoded dMRI (acq-fmri)
+### Derived Field Maps
+The ASL and fMRI acquisitions did not have dedicated field maps acquired to maximize the number of different MRI contrasts collected in the available time. Field maps have been derived for these acquisitions from the multi-echo T2Star (2xmagnitude, 2xphase) and from the Reverse Phase Encoded dMRI (acq-fmri).
 
 ---
 
