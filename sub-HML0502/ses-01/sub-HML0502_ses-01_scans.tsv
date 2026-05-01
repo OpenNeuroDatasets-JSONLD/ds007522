@@ -1,7 +1,5 @@
 filename	acq_time
 anat/sub-HML0502_ses-01_rec-defaced_T1w.nii.gz	2024-08-13T07:05:51.155000
-dwi/sub-HML0502_ses-01_dwi.nii.gz	2024-08-13T07:11:39.950000
-fmap/sub-HML0502_ses-01_dir-PA_epi.nii.gz	2024-08-13T07:20:45.660000
 func/sub-HML0502_ses-01_task-rest_bold.nii.gz	2024-08-13T07:22:49.450000
 perf/sub-HML0502_ses-01_acq-prod_m0scan.nii.gz	2024-08-13T07:33:34.852500
 perf/sub-HML0502_ses-01_acq-prod_asl.nii.gz	2024-08-13T07:35:11.732500

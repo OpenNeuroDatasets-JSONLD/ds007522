@@ -12,7 +12,6 @@ anat/sub-HML0048_ses-01_rec-defaced_echo-2_part-phase_T2starw.nii.gz	2022-07-30T
 anat/sub-HML0048_ses-01_rec-defaced_echo-3_part-phase_T2starw.nii.gz	2022-07-30T09:37:43.980000
 anat/sub-HML0048_ses-01_rec-defaced_echo-4_part-phase_T2starw.nii.gz	2022-07-30T09:37:43.980000
 anat/sub-HML0048_ses-01_rec-defaced_echo-5_part-phase_T2starw.nii.gz	2022-07-30T09:37:43.980000
-perf/sub-HML0048_ses-01_acq-plusM0_asl.nii.gz	2022-07-30T09:46:39.250000
 anat/sub-HML0048_ses-01_acq-hippo_T2w.nii.gz	2022-07-30T09:52:23.262500
 dwi/sub-HML0048_ses-01_dwi.nii.gz	2022-07-30T09:58:09.020000
 fmap/sub-HML0048_ses-01_dir-PA_epi.nii.gz	2022-07-30T10:07:11.817500

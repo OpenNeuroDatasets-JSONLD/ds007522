@@ -160,7 +160,6 @@
     "TotalReadoutTime": 0.0379504,
     "TxRefAmp": 333.139,
     "IntendedFor": [
-        "ses-01/func/sub-HML0051_ses-01_task-rest_bold.nii.gz",
-        "ses-01/perf/sub-HML0051_ses-01_acq-plusM0_asl.nii.gz"
+        "ses-01/func/sub-HML0051_ses-01_task-rest_bold.nii.gz"
     ]
 }

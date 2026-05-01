@@ -33,8 +33,10 @@ This OpenNeuro dataset specifically contains just the **Neuroimaging (3T MRI)** 
 ### Data Access, Associated Datasets and Detailed Protocols
 For researchers seeking access to associated PAN datasets including MindCrowd tests, demographic and biometric measures, corresponding cognitive scores, Garmin wearable data, blood/CSF biomarkers and other derived biomarker panels, carotid ultrasound metrics, derived MRI measures, assessments and surveys and much more please request access via the PAN centralized data portal at [https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/). In addition to the datasets mentioned, detailed Standard Operating Protocols (SOP) governing data collection are also available on the portal as well as protocols used for obtained deriving measures.
 
-### MRI Processing Protocols 
-Preliminary processing has been performed on the MRI data provided here and the derived measures for this are available for access at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. Protocols that describe the details of the MRI acquisitions and provide suggestions for MRI preprocessing are also listed below:
+### MRI  Processing Protocols 
+Preliminary processing has been performed on the MRI data provided here and MRI derived measures are available for access at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) as described above. 
+
+Protocols used for producing these MRI measures and other PAN measures can be found at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. Links to the MRI protocols are provided below for convenient access:
 
 * [Anatomic Measures](dx.doi.org/10.17504/protocols.io.n92ld5yw9v5b/v1)
 * [Perfusion Arterial Spin Labeling](dx.doi.org/10.17504/protocols.io.n92ld667xg5b/v1)
@@ -51,18 +53,23 @@ The `_sessions.tsv` file contains the following fields -  `session_notes`, `prot
 
 The `_scans.tsv` file provides the order in which the bids files were obtained during the session. The `acq_time` field has been randomly jittered by a subject-specific factor of between 1 to 15 days to anonymize the subject visit.
 
-* The BIDS label used for the initial baseline visit is `ses-01`
-* Repeat visits to correct technical issues with the initial baseline visit are labelled `ses-02`, `ses-03` and so on.
-* The BIDS label used for the initial 2-year longitudinal follow-up visit is `ses-follow01` (only available at the moment in the `Tucson` site)
-* Repeat visits to correct technical issues with the initial 2-year follow-up visit are labelled `ses-follow02`, `ses-follow03` and so on.
+The `_excluded.tsv` file in `derivatives/excluded` provides a brief label in the`scan_exclusion_reason` field explaining why an acquired scan may have been removed from the BIDS hierarchy.
+
+* The BIDS label used for the initial **baseline** visit is `ses-01`
+* Repeat visits to **correct** technical issues with the **initial baseline visit** are labelled `ses-02`, `ses-03` and so on.
+* The BIDS label used for the **initial 2-year longitudinal follow-up visit** is `ses-follow01` (only available at the moment in the `Tucson` site)
+* Repeat visits to **correct** technical issues with the **initial 2-year follow-up visit** are labelled `ses-follow02`, `ses-follow03` and so on.
 
 ### MRI Quality
 Efforts are ongoing to complete as much manual quality control and quality assurance of the provided data as possible. In the meantime, the main source of information on the quality and validity of provided scans is the `_sessions.tsv` and `_scans.tsv` files for each subject and session as detailed above. Where specific scans had to be repeated during the **same** session to correct a technical issue or address patient motion then only the valid scan has been uploaded to avoid multiple runs of the same acquisition in each session.
 
-Where individual scans in a session have been discovered to have issues retrospectively then in a few cases a second session has been scheduled to try and acquire just the affected scans. These events are documented in the `_sessions.tsv` file and both the invalid and valid scans have been uploaded. Subjects with multiple base sessions e.g. ses-01 and ses-02 or multiple follow-up sessions e.g. follow-01 and follow-02 are an indication that the previous session (ses-01 or follow-01) had a scan or series of scans that needed correcting in the subsequent session (ses-02 or ses-follow02).
+Where individual scans in a session have been discovered to have issues retrospectively then in a few cases a second session has been scheduled to try and acquire just the affected scans. These events are documented in the `_sessions.tsv` file and invalid scans have been omitted and the reason for this provided in the `scan_exclusion_reason` field in the `_excluded.tsv` file in the `derivatives/excluded` folder.
 
-### Tx Issue at the University of Arizona
-Entire subject sessions taken over some weeks in the summer of 2025 (between June and mid-October) at the University of Arizona suffered from slight clipping of the Radio Frequency (RF) pulses caused by a fault in a transmission box. These sessions have been excluded from this upload. Most of the affected subjects have been re-scanned successfully since the repair of this issue. 
+Subjects with multiple **baseline** sessions e.g. `ses-01` and `ses-02` or multiple **follow-up sessions** e.g. `follow-01` and `follow-02` are an indication that the previous session (either the baseline session, ses-01 or the follow-up session, follow-01) had a scan or series of scans that needed correcting in the subsequent session (baseline repeated as ses-02, or follow-up repeated as ses-follow02).
+
+Scans that are not available in `_scans.tsv` were either not acquired at all or were retrospectively flagged as problematic. The `_excluded.tsv` file in `derivatives/excluded` provides brief details on the latter i.e. scans that were acquired but later withdrawn from the BIDS upload for technical reasons. Additional information on the status of the session are also provided in the `_sessions.tsv` file. 
+
+Entire subject sessions that experienced systemic technical issues have been completely removed from the upload and have not been referenced. More information about these sessions can be provided as required. 
 
 ### Scanner upgrades
 There have been 2 scanner upgrades to date:

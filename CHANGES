@@ -1,2 +1,3 @@
 0.0.1  Initial data uploaded
 0.0.2  Slight changes to README
+0.0.3  Remove questionable scans and sessions from the Bids hierarchy. The field 'scan_exclusion_reason' in the session specific file `_excluded.tsv` in the `derivatives/excluded` folder tracks these removals.  

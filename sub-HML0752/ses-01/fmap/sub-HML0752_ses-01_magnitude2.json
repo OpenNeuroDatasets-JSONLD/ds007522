@@ -86,7 +86,6 @@
     "StationName": "AWP45424",
     "TxRefAmp": 337.62,
     "IntendedFor": [
-        "ses-01/func/sub-HML0752_ses-01_task-rest_bold.nii.gz",
-        "ses-01/perf/sub-HML0752_ses-01_acq-prod_asl.nii.gz"
+        "ses-01/func/sub-HML0752_ses-01_task-rest_bold.nii.gz"
     ]
 }

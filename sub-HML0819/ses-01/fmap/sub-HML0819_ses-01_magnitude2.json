@@ -88,7 +88,6 @@
     "ConversionSoftwareVersion": "v1.0.20220720",
     "Dcm2bidsVersion": "2.1.6",
     "IntendedFor": [
-        "ses-01/func/sub-HML0819_ses-01_task-rest_bold.nii.gz",
-        "ses-01/perf/sub-HML0819_ses-01_acq-prod_asl.nii.gz"
+        "ses-01/func/sub-HML0819_ses-01_task-rest_bold.nii.gz"
     ]
 }

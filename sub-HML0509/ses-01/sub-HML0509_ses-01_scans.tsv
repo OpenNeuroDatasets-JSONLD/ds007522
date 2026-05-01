@@ -3,8 +3,6 @@ anat/sub-HML0509_ses-01_rec-defaced_T1w.nii.gz	2024-07-01T08:00:51.610000
 dwi/sub-HML0509_ses-01_dwi.nii.gz	2024-07-01T08:06:45.930000
 fmap/sub-HML0509_ses-01_dir-PA_epi.nii.gz	2024-07-01T08:15:54.072500
 func/sub-HML0509_ses-01_task-rest_bold.nii.gz	2024-07-01T08:18:02.230000
-perf/sub-HML0509_ses-01_acq-prod_m0scan.nii.gz	2024-07-01T08:28:29.247500
-perf/sub-HML0509_ses-01_acq-prod_asl.nii.gz	2024-07-01T08:29:51.210000
 anat/sub-HML0509_ses-01_rec-defaced_FLAIR.nii.gz	2024-07-01T08:35:57.290000
 anat/sub-HML0509_ses-01_rec-defaced_echo-1_part-mag_T2starw.nii.gz	2024-07-01T08:41:53.992500
 anat/sub-HML0509_ses-01_rec-defaced_echo-2_part-mag_T2starw.nii.gz	2024-07-01T08:41:53.992500
