@@ -53,29 +53,24 @@ The `_sessions.tsv` file contains the following fields -  `session_notes`, `prot
 
 The `_scans.tsv` file provides the order in which the bids files were obtained during the session. The `acq_time` field has been randomly jittered by a subject-specific factor of between 1 to 15 days to anonymize the subject visit.
 
-The `_excluded.tsv` file in `derivatives/excluded` provides a brief label in the`scan_exclusion_reason` field explaining why an acquired scan may have been removed from the BIDS hierarchy.
+The `_excluded.tsv` file in `derivatives/excluded` provides a brief label in the `scan_exclusion_reason` field explaining why an acquired scan may have been removed from the BIDS hierarchy.
 
-* The BIDS label used for the initial **baseline** visit is `ses-01`
-* Repeat visits to **correct** technical issues with the **initial baseline visit** are labelled `ses-02`, `ses-03` and so on.
-* The BIDS label used for the **initial 2-year longitudinal follow-up visit** is `ses-follow01` (only available at the moment in the `Tucson` site)
-* Repeat visits to **correct** technical issues with the **initial 2-year follow-up visit** are labelled `ses-follow02`, `ses-follow03` and so on.
+* The BIDS label used for the **initial baseline** visit is `ses-01`
+* Repeat visits to correct technical issues with the **initial baseline **visit are labelled `ses-02`, `ses-03` and so on.
+* The BIDS label used for the **initial 2-year longitudinal follow-up** visit is `ses-follow01` (only available at the moment in the `Tucson` site)
+* Repeat visits to correct technical issues with the **initial 2-year longitudinal follow-up** visit are labelled `ses-follow02`, `ses-follow03` and so on.
 
 ### MRI Quality
 Efforts are ongoing to complete as much manual quality control and quality assurance of the provided data as possible. In the meantime, the main source of information on the quality and validity of provided scans is the `_sessions.tsv` and `_scans.tsv` files for each subject and session as detailed above. Where specific scans had to be repeated during the **same** session to correct a technical issue or address patient motion then only the valid scan has been uploaded to avoid multiple runs of the same acquisition in each session.
 
-Where individual scans in a session have been discovered to have issues retrospectively then in a few cases a second session has been scheduled to try and acquire just the affected scans. These events are documented in the `_sessions.tsv` file and invalid scans have been omitted and the reason for this provided in the `scan_exclusion_reason` field in the `_excluded.tsv` file in the `derivatives/excluded` folder.
+Where issues have been discovered in scans retrospectively then in a few cases a second session has been scheduled when possible to try and acquire just the affected scans. These events are documented in the `_sessions.tsv` file. The invalid scans have been omitted and the reason for this is provided in the `scan_exclusion_reason` field in the `_excluded.tsv` file which resides in the `derivatives/excluded` folder.
 
-Subjects with multiple **baseline** sessions e.g. `ses-01` and `ses-02` or multiple **follow-up sessions** e.g. `follow-01` and `follow-02` are an indication that the previous session (either the baseline session, ses-01 or the follow-up session, follow-01) had a scan or series of scans that needed correcting in the subsequent session (baseline repeated as ses-02, or follow-up repeated as ses-follow02).
-
-Scans that are not available in `_scans.tsv` were either not acquired at all or were retrospectively flagged as problematic. The `_excluded.tsv` file in `derivatives/excluded` provides brief details on the latter i.e. scans that were acquired but later withdrawn from the BIDS upload for technical reasons. Additional information on the status of the session are also provided in the `_sessions.tsv` file. 
-
-Entire subject sessions that experienced systemic technical issues have been completely removed from the upload and have not been referenced. More information about these sessions can be provided as required. 
+As described above, the existence of multiple **baseline** sessions e.g. `ses-01` and `ses-02` or multiple **longitidinal follow-up** sessions e.g. `ses-follow01` and `ses-follow02` for a subject are an indication that the subject's initial session (either the initial baseline session, `ses-01` or the initial follow-up session, `ses-follow01`) had a scan or series of scans that needed correcting in a subsequent session (e.g. baseline repeated as `ses-02`, or follow-up repeated as `ses-follow02`). A number of subjects at the `Tucson` site were affected by a Technical issue with the Transmitter box on the scanner. The initial baseline or longitudinal scans for these subjects have not been uploaded to the repository. Instead only the fully repeated baseline scans (`ses-02`) and/or longitudinal scans (`ses-follow02`) have been uploaded. The accompanying `_sessions.tsv`, `_scans.tsv` and `_excluded.tsv` files provide supporting information to help users understand which scans were excluded, repeated or retained.
 
 ### Scanner upgrades
 There have been 2 scanner upgrades to date:
 * In October 2024, University of Miami upgraded from Siemens XA20 to XA50
-* In December 2024, University of Arizona  upgraded from Siemens VE11 to XA30
-* In June 2026, University of Arizona plans a hardware/software upgrade from Skyra XA30 to Vida XA60 
+* In December 2024, University of Arizona upgraded from Siemens VE11 to XA30
 
 ### Derived Field Maps
 The ASL and fMRI acquisitions did not have dedicated field maps acquired to maximize the number of different MRI contrasts collected in the available time. Field maps have been derived for these acquisitions from the multi-echo T2Star (2xmagnitude, 2xphase) and from the Reverse Phase Encoded dMRI (acq-fmri).
