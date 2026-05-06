@@ -38,11 +38,11 @@ Preliminary processing has been performed on the MRI data provided here and MRI 
 
 Protocols used for producing these MRI measures and other PAN measures can be found at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. Links to the MRI protocols are provided below for convenient access:
 
-* [Anatomic Measures](dx.doi.org/10.17504/protocols.io.n92ld5yw9v5b/v1)
-* [Perfusion Arterial Spin Labeling](dx.doi.org/10.17504/protocols.io.n92ld667xg5b/v1)
-* [Diffusion Weighted Imaging](dx.doi.org/10.17504/protocols.io.6qpvrkopolmk/v1)
-* [White Matter Hyperintensities](dx.doi.org/10.17504/protocols.io.n2bvjebwngk5/v1)
-* [Resting-State Functional Magnetic Resonance Imaging](dx.doi.org/10.17504/protocols.io.81wgbnp41gpk/v1)
+* [Anatomic Measures](http://dx.doi.org/10.17504/protocols.io.n92ld5yw9v5b/v1)
+* [Perfusion Arterial Spin Labeling](http://dx.doi.org/10.17504/protocols.io.n92ld667xg5b/v1)
+* [Diffusion Weighted Imaging](http://dx.doi.org/10.17504/protocols.io.6qpvrkopolmk/v1)
+* [White Matter Hyperintensities](http://dx.doi.org/10.17504/protocols.io.n2bvjebwngk5/v1)
+* [Resting-State Functional Magnetic Resonance Imaging](http://dx.doi.org/10.17504/protocols.io.81wgbnp41gpk/v1)
 
 ---
 
@@ -53,7 +53,11 @@ The `_sessions.tsv` file contains the following fields -  `session_notes`, `prot
 
 The `_scans.tsv` file provides the order in which the bids files were obtained during the session. The `acq_time` field has been randomly jittered by a subject-specific factor of between 1 to 15 days to anonymize the subject visit. Scans that have been omitted from the repository due to technical issues have also been removed from this table. These excluded scans are described in the `_excluded.tsv` file which is described below.
 
-The `_excluded.tsv` file in `derivatives/excluded` provides a brief label in the `scan_exclusion_reason` field explaining why an acquired scan may have been removed from the BIDS hierarchy.
+The `_excluded.tsv` file in `derivatives/excluded_scans` provides a brief label in the `scan_exclusion_reason` field explaining why an acquired scan may have been removed from the BIDS hierarchy for a particular subject and session.
+
+The `sessions_omitted.tsv` file in `derivatives/omitted_sessions` provides a brief label in the `session_omission_reason` field explaining why a session may have been removed from the BIDS hierarchy.
+
+
 
 ### Session Labels
 * The BIDS label used for the **initial baseline** visit is `ses-01`
@@ -68,7 +72,7 @@ Where issues have been discovered in scans retrospectively then in a few cases a
 
 As described in section **Session Labels** above, the existence of multiple **baseline** sessions e.g. `ses-01` and `ses-02` or multiple **longitudinal follow-up** sessions e.g. `ses-follow01` and `ses-follow02` for a subject are an indication that the subject's initial session (either the initial baseline session, `ses-01` or the initial follow-up session, `ses-follow01`) had a scan or series of scans that needed correcting in a subsequent session (e.g. *baseline* repeated as `ses-02`, or *follow-up* repeated as `ses-follow02`).
 
-In some instances the entire initial baseline or longitudinal session needed to be repeated. For example, a number of subjects at the `Tucson` site were affected by a technical issue with the scanner ttansmitter box in summer 2025. The initial baseline (`ses-01`) or longitudinal scans (`ses-follow01`) for these subjects have not been uploaded to the repository as all scans were affected. Instead only the fully repeated baseline scans (`ses-02`) and/or longitudinal scans (`ses-follow02`) have been uploaded. The accompanying `_sessions.tsv`, `_scans.tsv` and `_excluded.tsv` files provide supporting information to help users understand which scans have been excluded, repeated or retained.
+In some instances the entire initial baseline or longitudinal session needed to be repeated. For example, a number of subjects at the `Tucson` site were affected by a technical issue with the scanner ttansmitter box in summer 2025. The initial baseline (`ses-01`) or longitudinal scans (`ses-follow01`) for these subjects have not been uploaded to the repository as all scans were affected. Instead only the fully repeated baseline scans (`ses-02`) and/or longitudinal scans (`ses-follow02`) have been uploaded. The accompanying `_sessions.tsv`, `_scans.tsv` , `_excluded.tsv` and `sessions_omitted.tsv` files provide supporting information to help users understand which scans/sessions have been excluded, repeated or retained.
 
 ### Scanner upgrades
 There have been 2 scanner upgrades to date:
