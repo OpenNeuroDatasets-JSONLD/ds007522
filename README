@@ -49,7 +49,7 @@ Protocols used for producing these MRI measures and other PAN measures can be fo
 ### Session and Scan Details
 Information about session and scan details are available in the bids hierarchy at `sub-{}/sub-{}_sessions.tsv` and `sub-{}/sub-{}_ses-{}_scans.tsv` respectively
 
-The `_sessions.tsv` file contains the following fields -  `session_notes`, `protocol_check`, `manufacturer_model` and `software_version`. The `session_notes` field is a free text (uncoded) field with information that may be pertinent to the session. This may contain information about the potential quality of scans, the participant's experience of the scan session or other technical issues of note. The last three fields help to uniquely identify the MRI scanner/software used for the acquisition. This allows researchers to identify scanner upgrades.
+The `_sessions.tsv` file contains the following fields, `session_notes`, `protocol_check`, `manufacturer_model` and `software_version`. The `session_notes` field is a free text field with information that may be pertinent to the session. This may contain information about the potential quality of scans, the participant's experience of the scan session or other technical issues of note. The last three fields help to uniquely identify the MRI scanner/software used for the acquisition. This allows researchers to identify scanner upgrades.
 
 The `_scans.tsv` file provides the order in which the bids files were obtained during the session. The `acq_time` field has been randomly jittered by a subject-specific factor of between 1 to 15 days to anonymize the subject visit. Scans that have been omitted from the repository due to technical issues have also been removed from this table. These excluded scans are described in the `_excluded.tsv` file which is described below.
 
@@ -103,8 +103,8 @@ If you publish manuscripts using data from PAN, you agree to include the followi
 ---
 
 ## References
-* Ryan L., et al. (2019). Precision Aging: applying precision medicine to the field of cognitive aging. *Frontiers in aging neuroscience, 11*, 128 [doi:10.3389/fnagi.2019.00128](doi:10.3389/fnagi.2019.00128)
-* Huentelman MJ, et al. (2020). Reinventing neuroaging research in the digital age. *Trends in Neurosciences, 43*(1), 17-23. [doi:10.1016/j.tins.2019.11.004](doi:10.1016/j.tins.2019.11.004)
-* Ryan L, et al. (2025). MindCrowd-Expanded: an online multi-domain assessment of cognitive aging. *Gerontology 71*(9), 773-791. [doi:10.1159/000547246](doi:10.1159/000547246)
-* Barnes, C.A., & Najafi, B. (2025). The Precision Aging Network: Creating a roadmap for healthy brain aging. *Gerontology*, 1. [doi.org/10.1159/000548488](doi.org/10.1159/000548488)
-* Sonderer, C., et al. (2025). Analysis of quantitative susceptibility mapping data for multi-site and multi-modal brain imaging studies: for measuring brain iron and its changes with age. *Gerontology 71*(9), 734-754. [doi:10.1159/000546852](doi:10.1159/000546852)
+* Ryan L., et al. (2019). Precision Aging: applying precision medicine to the field of cognitive aging. *Frontiers in aging neuroscience, 11*, 128 [doi:10.3389/fnagi.2019.00128](https://doi.org/10.3389/fnagi.2019.00128)
+* Huentelman MJ, et al. (2020). Reinventing neuroaging research in the digital age. *Trends in Neurosciences, 43*(1), 17-23. [doi:10.1016/j.tins.2019.11.004](https://doi.org/10.1016/j.tins.2019.11.004)
+* Ryan L, et al. (2025). MindCrowd-Expanded: an online multi-domain assessment of cognitive aging. *Gerontology 71*(9), 773-791. [doi:10.1159/000547246](https://doi.org/10.1159/000547246)
+* Barnes, C.A., & Najafi, B. (2025). The Precision Aging Network: Creating a roadmap for healthy brain aging. *Gerontology*, 1. [doi.org/10.1159/000548488](https://doi.org/10.1159/000548488)
+* Sonderer, C., et al. (2025). Analysis of quantitative susceptibility mapping data for multi-site and multi-modal brain imaging studies: for measuring brain iron and its changes with age. *Gerontology 71*(9), 734-754. [doi:10.1159/000546852](https://doi.org/10.1159/000546852)
