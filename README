@@ -17,13 +17,13 @@ This is a multi-site study conducted in-person at four sites:
 
 ### Participant Recruitment & Eligibility
 * **Age:** 50–79 years.
-* **Demographics:** self-identify as White, Black, or Hispanic race/ethnicity
+* **Demographics:** Self-identify as White, Black, or Hispanic race/ethnicity.
 * **Key Inclusion:** English language proficiency, No diagnosis of memory loss or dementia; no history of psychotic illness; no contraindications for blood draw or MRI.
 * **MindCrowd:** Participants are drawn from [MindCrowd](https://mindcrowd.org), a large-scale online study capturing cognitive performance and health factors across a diverse population. 
 
 
 ### Study Visit Procedures
-The protocol includes a baseline visit for most participants. For a select number of participants at the University of Arizona a shorter longitudinal follow-up visit 2 years after the baseline visit is conducted. 
+The protocol includes a baseline visit for most participants. For a selected subset of participants at the University of Arizona, a shorter longitudinal follow-up visit, 2 years after the baseline visit, is conducted. 
 
 ---
 
@@ -49,7 +49,7 @@ Information about session and scan details are available in the bids hierarchy a
 
 The `_sessions.tsv` file contains the following fields, `session_notes`, `protocol_check`, `manufacturer_model` and `software_version`. The `session_notes` field is a free text field with information that may be pertinent to the session. This may contain information about the potential quality of scans, the participant's experience of the scan session or other technical issues of note. The last three fields help to uniquely identify the MRI scanner/software used for the acquisition. This allows researchers to identify scanner upgrades.
 
-The `_scans.tsv` file provides the order in which the bids files were obtained during the session. The `acq_time` field has been randomly jittered by a subject-specific factor of between 1 to 15 days to anonymize the subject visit. Scans that have been omitted from the repository due to technical issues have also been removed from this table. These excluded scans are described in the `_excluded.tsv` file which is described below.
+The `_scans.tsv` file provides the order in which the BIDS files were obtained during the session. The `acq_time` field has been randomly shifted by a subject-specific factor of between 1 to 15 days to anonymize the subject visit. Scans that have been omitted from the repository due to technical issues have also been removed from this table. These excluded scans are described in the `_excluded.tsv` file which is described below.
 
 The `_excluded.tsv` file in `derivatives/excluded_scans` provides a brief label in the `scan_exclusion_reason` field explaining why an acquired scan may have been removed from the BIDS hierarchy for a particular subject and session.
 
@@ -58,10 +58,10 @@ The `sessions_omitted.tsv` file in `derivatives/omitted_sessions` provides a bri
 
 
 ### Session Labels
-* The BIDS label used for the **initial baseline** visit is `ses-01`
-* Repeat visits to correct technical issues with the **initial baseline** visit are labelled `ses-02`, `ses-03` and so on.
-* The BIDS label used for the **initial 2-year longitudinal follow-up** visit is `ses-follow01` (only available at the moment in the `Tucson` site)
-* Repeat visits to correct technical issues with the **initial 2-year longitudinal follow-up** visit are labelled `ses-follow02`, `ses-follow03` and so on.
+* The BIDS session label used for the **initial baseline** visit is `ses-01`
+* Repeat visits conducted to correct technical issues with the **initial baseline** visit are labeled `ses-02`, `ses-03` and so on.
+* The BIDS session label used for the **initial 2-year longitudinal follow-up** visit is `ses-follow01` (only available at the moment in the `Tucson` site)
+* Repeat visits conducted to correct technical issues with the **initial 2-year longitudinal follow-up** visit are labeled `ses-follow02`, `ses-follow03` and so on.
 
 ### MRI Quality
 Efforts are ongoing to complete as much manual quality control and quality assurance of the provided data as possible. In the meantime, the main source of information on the quality and validity of provided scans is the `_sessions.tsv` and `_scans.tsv` files for each subject and session as detailed above. Where specific scans had to be repeated during the **same** session to correct a technical issue or address patient motion then only the valid scan has been uploaded to avoid multiple runs of the same acquisition in each session.
@@ -78,7 +78,10 @@ There have been 2 scanner upgrades to date:
 * In December 2024, University of Arizona upgraded from Siemens VE11 to XA30
 
 ### Derived Field Maps
-The ASL and resting state fMRI acquisitions did not have dedicated field maps acquired so as to maximize the number of different MRI contrasts that could be collected in the available scan time. Field maps have been derived for these acquisitions from the multi-echo T2Star (2xmagnitude, 2xphase) and from the Reverse Phase Encoded dMRI (acq-fmri).
+
+Dedicated field maps were not acquired for the ASL or resting-state fMRI acquisitions, in order to maximize the number of MRI contrasts collected within the available scan time.
+
+Field maps for these acquisitions were instead derived from two sources: the multi-echo T2starw acquisition, represented by `magnitude1`, `magnitude2`, `phase1`, and `phase2`, and the diffusion/reverse phase-encoded diffusion MRI acquisitions, represented by `acq-fmri_dirAP_epi` and `acq-fmri_dirPA_epi`.
 
 ---
 
