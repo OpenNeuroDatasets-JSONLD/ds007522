@@ -33,16 +33,14 @@ This OpenNeuro dataset specifically contains just the **Neuroimaging (3T MRI)** 
 ### Data Access, Associated Datasets and Detailed Protocols
 For researchers seeking access to associated PAN datasets including MindCrowd tests, demographic and biometric measures, corresponding cognitive scores, Garmin wearable data, blood/CSF biomarkers and other derived biomarker panels, carotid ultrasound metrics, derived MRI measures, assessments and surveys and much more please request access via the PAN centralized data portal at [https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/). In addition to the datasets mentioned, detailed Standard Operating Protocols (SOP) governing data collection are also available on the portal as well as protocols used for obtained deriving measures.
 
-### MRI  Processing Protocols 
+### MRI Derived Measures and Processing Protocols 
 Preliminary processing has been performed on the MRI data provided here and MRI derived measures are available for access at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) as described above. 
 
-Protocols used for producing these MRI measures and other PAN measures can be found at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. Links to the MRI protocols are provided below for convenient access:
+Protocols used for producing these MRI measures and other PAN measures can be found at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. 
 
-* [Anatomic Measures](http://dx.doi.org/10.17504/protocols.io.n92ld5yw9v5b/v1)
-* [Perfusion Arterial Spin Labeling](http://dx.doi.org/10.17504/protocols.io.n92ld667xg5b/v1)
-* [Diffusion Weighted Imaging](http://dx.doi.org/10.17504/protocols.io.6qpvrkopolmk/v1)
-* [White Matter Hyperintensities](http://dx.doi.org/10.17504/protocols.io.n2bvjebwngk5/v1)
-* [Resting-State Functional Magnetic Resonance Imaging](http://dx.doi.org/10.17504/protocols.io.81wgbnp41gpk/v1)
+While every effort will be made to ensure that the protocols on the **PAN Data Portal** are up to date, please refer also to the  **MRI Protocols Release 1** folder at this [PANPipelines OSF](https://osf.io/fpbkn/files/osfstorage) page for the most current protocol releases. 
+
+Details for replicating the MRI measures are also available in the [PANpipelines Github](https://github.com/MRIresearch/PANpipelines/tree/main/october2025_PAN_Deployment) page
 
 ---
 
