@@ -1,2 +1,0 @@
-session_id	session_notes	protocol_check	manufacturer_model	software_version
-ses-01	DTI_MB_3SHELL_RPE was acquired in the wrong direction. Will need to reacquire the DWI again in a second session with RPE in correct direction for susceptibility correction to be feasible.	/nifti/BIDSQC-AACAZ/currjson/sub-HML0070_ses-01_acq-fmri_dir-PA_epi.json::PhaseEncodingDirection is *DIFFERENT*: j j- |	Skyra	syngo MR E11
