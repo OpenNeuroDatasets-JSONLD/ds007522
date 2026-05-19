@@ -1,0 +1,2 @@
+session_id	session_notes	protocol_check	manufacturer_model	software_version
+ses-01	6/X/2023 CPU: Resting state fMRI acquired in wrong direction. Need to schedule a second session to acquire rsFMRI in the right direction.	/nifti/BIDSQC-AACAZ/currjson/sub-HML0101_ses-01_task-rest_bold.json::PhaseEncodingDirection is *DIFFERENT*: j- j |	Skyra	syngo MR E11
