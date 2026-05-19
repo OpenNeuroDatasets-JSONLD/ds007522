@@ -1,3 +1,5 @@
+1.0.0 2026-05-19
+  - Initial public release of 3T MRI data for first PAN data release.
 0.0.4 2026-05-14
   - Fix defacing on a selection of scans.
 0.0.3 2026-05-06
@@ -5,6 +7,4 @@
 0.0.2 2026-03-31
   - Added initial 701 subjects for first release.
 0.0.1 2026-03-16
-  - Created repository. 
-  
-
+  - Created repository.
