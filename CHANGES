@@ -1,3 +1,5 @@
+1.0.1 2026-05-22
+  - Excluded scans now properly removed. 3 omitted sessions reinstated. 
 1.0.0 2026-05-19
   - Initial public release of 3T MRI data for first PAN data release.
 0.0.4 2026-05-14
@@ -7,4 +9,6 @@
 0.0.2 2026-03-31
   - Added initial 701 subjects for first release.
 0.0.1 2026-03-16
-  - Created repository.
+  - Created repository. 
+  
+
