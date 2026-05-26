@@ -1,3 +1,7 @@
+1.1.0 2026-05-26
+  - - Slight modification to first MRI PAN data release 1.0.0.
+  - - Previously omitted sessions (sub-HML0068_ses-02, sub-HML0070_ses-02 and sub-HML0101_ses-02) have been added
+  - - Scans that should have been excluded in first release have been correctly excluded in this release.
 1.0.1 2026-05-22
   - Excluded scans now properly removed. 3 omitted sessions reinstated. 
 1.0.0 2026-05-19
@@ -9,6 +13,4 @@
 0.0.2 2026-03-31
   - Added initial 701 subjects for first release.
 0.0.1 2026-03-16
-  - Created repository. 
-  
-
+  - Created repository.
