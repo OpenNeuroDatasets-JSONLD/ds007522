@@ -21,7 +21,6 @@ This is a multi-site study conducted in-person at four sites:
 * **Key Inclusion:** English language proficiency, No diagnosis of memory loss or dementia; no history of psychotic illness; no contraindications for blood draw or MRI.
 * **MindCrowd:** Participants are drawn from [MindCrowd](https://mindcrowd.org), a large-scale online study capturing cognitive performance and health factors across a diverse population. 
 
-
 ### Study Visit Procedures
 The protocol includes a baseline visit for most participants. For a selected subset of participants at the University of Arizona, a shorter longitudinal follow-up visit, 2 years after the baseline visit, is conducted. 
 
@@ -55,8 +54,6 @@ The `_excluded.tsv` file in `derivatives/excluded_scans` provides a brief label 
 
 The `sessions_omitted.tsv` file in `derivatives/omitted_sessions` provides a brief label in the `session_omission_reason` field explaining why a session may have been removed from the BIDS hierarchy.
 
-
-
 ### Session Labels
 * The BIDS session label used for the **initial baseline** visit is `ses-01`
 * Repeat visits conducted to correct technical issues with the **initial baseline** visit are labeled `ses-02`, `ses-03` and so on.
@@ -78,7 +75,6 @@ There have been 2 scanner upgrades to date:
 * In December 2024, University of Arizona upgraded from Siemens VE11 to XA30
 
 ### Derived Field Maps
-
 Dedicated field maps were not acquired for the ASL or resting-state fMRI acquisitions, in order to maximize the number of MRI contrasts collected within the available scan time.
 
 Field maps for these acquisitions were instead derived from two sources: the multi-echo T2starw acquisition, represented by `magnitude1`, `magnitude2`, `phase1`, and `phase2`, and the diffusion/reverse phase-encoded diffusion MRI acquisitions, represented by `acq-fmri_dirAP_epi` and `acq-fmri_dirPA_epi`.
