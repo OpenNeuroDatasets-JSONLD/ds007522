@@ -1,3 +1,7 @@
+2.0.0 2026-07-07
+  - Second Public release of 3T MRI data for PAN study.
+  - An additional 347 sessions (including 79 longitudinal follow-up sessions) have been added bringing the total number to 1064 sessions.
+  - 268 new subjects have been added bringing the total number to 969 subjects.
 1.1.1 2026-07-02
   - An additional 347 sessions (including 79 longitudinal follow-up sessions) have been added bringing the total number to 1064 sessions.
   - 268 new subjects have been added bringing the total number to 969 subjects.
@@ -16,6 +20,4 @@
 0.0.2 2026-03-31
   - Added initial 701 subjects for first release.
 0.0.1 2026-03-16
-  - Created repository. 
-  
-
+  - Created repository.
