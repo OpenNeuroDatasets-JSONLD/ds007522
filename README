@@ -70,7 +70,7 @@ As described in section **Session Labels** above, the existence of multiple **ba
 In some instances the entire initial baseline or longitudinal session needed to be repeated. For example, a number of subjects at the `Tucson` site were affected by a technical issue with the scanner ttansmitter box in summer 2025. The initial baseline (`ses-01`) or longitudinal scans (`ses-follow01`) for these subjects have not been uploaded to the repository as all scans were affected. Instead only the fully repeated baseline scans (`ses-02`) and/or longitudinal scans (`ses-follow02`) have been uploaded. The accompanying `_sessions.tsv`, `_scans.tsv` , `_excluded.tsv` and `sessions_omitted.tsv` files provide supporting information to help users understand which scans/sessions have been excluded, repeated or retained.
 
 ### Scanner upgrades
-There have been 2 scanner upgrades to date:
+There have been three scanner upgrades to date:
 * In October 2024, University of Miami upgraded from Siemens XA20 to XA50
 * In December 2024, University of Arizona upgraded from Siemens VE11 to XA30
 * In July 2026, University of Miami upgraded from Siemens XA50 to XA60
