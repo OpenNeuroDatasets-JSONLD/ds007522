@@ -1,6 +1,6 @@
-2.0.2 2026-08-22
-  - An additional 185 sessions (including 25 longitudinal follow-up sessions) have been added bringing the total number to 1249 sessions (of which there are now a total of 104 longitudinal sessions).
-  - 159 new subjects have been added bringing the total number to 1128 subjects.
+2.0.2 2026-08-26
+  - An additional 188 sessions (including 25 longitudinal follow-up sessions) have been added bringing the total number to 1252 sessions (of which there are now a total of 104 longitudinal sessions).
+  - 162 new subjects have been added bringing the total number to 1131 subjects.
 2.0.1 2026-07-23
   - Slight modification to first MRI PAN data release 2.0.0.
   - Participants.tsv modified to remove subjects not covered by this release.
