@@ -71,10 +71,10 @@ In some instances the entire initial baseline or longitudinal session needed to 
 
 ### Scanner upgrades
 There have been four scanner upgrades to date:
-* In October 2024, University of Miami upgraded from Siemens XA20 to XA50
-* In December 2024, University of Arizona upgraded from Siemens VE11 to XA30
-* In July 2026, University of Miami upgraded from Siemens XA50 to XA60
-* In August 2026, Univeriy of Arizona upgraded from Siemens XA30 to Vida Fit
+* In October 2024, University of Miami upgraded from Siemens Vida XA20 to XA50
+* In December 2024, University of Arizona upgraded from Siemens Skyra VE11 to XA30
+* In July 2026, University of Miami upgraded from Siemens Vida XA50 to XA60
+* In August/September 2026, University of Arizona upgraded from Siemens Skyra XA30 to Siemens Vida Fit XA60
 
 ### Derived Field Maps
 Dedicated field maps were not acquired for the ASL or resting-state fMRI acquisitions, in order to maximize the number of MRI contrasts collected within the available scan time.
