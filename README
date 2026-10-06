@@ -37,7 +37,7 @@ Preliminary processing has been performed on the MRI data provided here and MRI 
 
 Protocols used for producing these MRI measures and other PAN measures can be found at the [PAN Data Portal](https://precisionagingnetwork.org/access-pan-study-data-for-research/) under **2. Prepare Your Abstract**  ->  **Protocols (with DOIs)**. 
 
-While every effort will be made to ensure that the protocols on the **PAN Data Portal** are up to date, please refer also to the  **MRI Protocols Release 1** folder at this [PANPipelines OSF](https://osf.io/fpbkn/files/osfstorage) page for the most current protocol releases. 
+While every effort will be made to ensure that the protocols on the **PAN Data Portal** are up to date, please refer also to the  **MRI Protocols Release** folders at this [PANPipelines OSF](https://osf.io/fpbkn/files/osfstorage) page for the most current protocol releases. 
 
 Details for replicating the MRI measures are also available in the [PANpipelines Github](https://github.com/MRIresearch/PANpipelines/tree/main/october2025_PAN_Deployment) page
 
@@ -74,7 +74,6 @@ There have been four scanner upgrades to date:
 * In October 2024, University of Miami upgraded from Siemens Vida XA20 to XA50
 * In December 2024, University of Arizona upgraded from Siemens Skyra VE11 to XA30
 * In July 2026, University of Miami upgraded from Siemens Vida XA50 to XA60
-* In August/September 2026, University of Arizona upgraded from Siemens Skyra XA30 to Siemens Vida Fit XA60
 
 ### Derived Field Maps
 Dedicated field maps were not acquired for the ASL or resting-state fMRI acquisitions, in order to maximize the number of MRI contrasts collected within the available scan time.
