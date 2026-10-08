@@ -70,7 +70,7 @@ As described in section **Session Labels** above, the existence of multiple **ba
 In some instances the entire initial baseline or longitudinal session needed to be repeated. For example, a number of subjects at the `Tucson` site were affected by a technical issue with the scanner transmitter box in summer 2025. The initial baseline (`ses-01`) or longitudinal scans (`ses-follow01`) for these subjects have not been uploaded to the repository as all scans were affected. Instead only the fully repeated baseline scans (`ses-02`) and/or longitudinal scans (`ses-follow02`) have been uploaded. The accompanying `_sessions.tsv`, `_scans.tsv` , `_excluded.tsv` and `sessions_omitted.tsv` files provide supporting information to help users understand which scans/sessions have been excluded, repeated or retained.
 
 ### Scanner upgrades
-There have been four scanner upgrades to date:
+There have been three scanner upgrades to date:
 * In October 2024, University of Miami upgraded from Siemens Vida XA20 to XA50
 * In December 2024, University of Arizona upgraded from Siemens Skyra VE11 to XA30
 * In July 2026, University of Miami upgraded from Siemens Vida XA50 to XA60
@@ -78,7 +78,10 @@ There have been four scanner upgrades to date:
 ### Derived Field Maps
 Dedicated field maps were not acquired for the ASL or resting-state fMRI acquisitions, in order to maximize the number of MRI contrasts collected within the available scan time.
 
-Field maps for these acquisitions were instead derived from two sources: the multi-echo T2starw acquisition, represented by `magnitude1`, `magnitude2`, `phase1`, and `phase2`, and the diffusion/reverse phase-encoded diffusion MRI acquisitions, represented by `acq-fmri_dirAP_epi` and `acq-fmri_dirPA_epi`.
+Field maps for these acquisitions were instead derived from two sources: the multi-echo T2starw acquisition, represented by `magnitude1`, `magnitude2`, `phase1`, and `phase2`, and the diffusion/reverse phase-encoded diffusion MRI acquisitions, represented by `acq-fmri_dir-AP_epi` and `acq-fmri_dir-PA_epi`.
+
+### Incorrect Phase Encoding Direction Labels in BIDS names
+Please note that the "AP" and "PA" labels in the `fmap` folder are unfortunately incorrect and do not reflect the actual physical Phase-Encoding (PE) direction of the field maps. This should not matter for most of the standard preprocessing pipelines run. Tools like `TOPUP` just need the AP and PA images to be clearly labelled as having opposite PE directions in their metadata. It is hoped that this can be corrected in a future release. 
 
 ---
 
