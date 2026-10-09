@@ -1,5 +1,9 @@
+2.0.4 2026-10-08
+  - An additional 2 sessions (including 1 longitudinal follow-up sessions) have been added bringing the total number to 1262 sessions (of which there are now a total of 105 longitudinal sessions).
+ - 1 new subject has been added bringing the total number to 1140 subjects.
+ - A "baseline_scan_datetime" field has been added to the participants.tsv file to help estimate subject age in longitudinal sessions
 2.0.3 2026-10-07
-  - Participants.tsv file revised to provide better estimate of participant age at provided at first baseline scan (ses-01). the difference in years between the subject's registration date in mindcrowd and the date of baseline scan is added to the participant's age recorded at mindcrowd registration. 
+  - The Participants.tsv file has been revised to provide better estimates of participant age as provided at the first baseline scan (ses-01). The difference in years between the subject's registration date in mindcrowd and the date of baseline scan is added to the participant's age recorded at mindcrowd registration. 
 2.0.2 2026-10-04
   - An additional 196 sessions (including 25 longitudinal follow-up sessions) have been added bringing the total number to 1260 sessions (of which there are now a total of 104 longitudinal sessions).
   - 170 new subjects have been added bringing the total number to 1139 subjects.

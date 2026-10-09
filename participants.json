@@ -29,5 +29,8 @@
             "Atlanta": "Emory University (Atlanta, GA)",
             "Baltimore": "Johns Hopkins University (Baltimore, MD)"
         }
+    },
+    "baseline_scan_datetime": {
+        "Description": "Date and time of baseline MRI scan in Arizona local time (MST) with UTC offset. Note that timestamps are randomly shifted by a subject-specific factor of between 1 to 15 days to anonymize the subject visit and do not reflect exact real-world timing"
     }
 }
