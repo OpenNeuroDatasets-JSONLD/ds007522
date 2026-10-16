@@ -69,7 +69,7 @@
         "ses-01/func/sub-HML1205_ses-01_task-rest_bold.nii.gz",
         "ses-01/perf/sub-HML1205_ses-01_acq-pcasl_asl.nii.gz"
     ],
-    "PhaseEncodingDirection": "j-",
+    "PhaseEncodingDirection": "j",
     "SliceTiming": [
         0.0,
         1.9304,

@@ -1,5 +1,8 @@
 # Precision Aging Network (PAN): Closing the Gap Between Cognitive Healthspan and Human Lifespan
 
+## Important Notice - please use only Release 3.0.0 and later of this repository
+On 12 October 2026 it was noticed that the PhaseEncodingDirection" metadata was incorrect in the Diffusion and the reverse-phase encoded Baltimore scans. The affected acquisitions are `dwi/dwi`, `fmap/acq-fmri_dir-AP` which have now been changed from `j` to `j-`; and the `fmap/dir-PA_epi` and `fmap/acq-fmri_dir-AP` acquisitions which have been changed from `j-` to `j`. If the `fmap/acq-fmri_dir-AP` and `fmap/acq-fmri_dir-PA` fieldmaps were used for correcting the fmri or asl data using sdcflow (e.g. fmriprep, aslprep) then the distortion correction will likely have failed. The diffusion susceptibility distortion correction is however unaffected by this mistake due to the symmetry of the diffusion and reverse-phase encoded acquisitions. Please use only Release 3.0.0 and later of this repository.
+
 ## Contact
 For additional information, please contact:
 
@@ -33,7 +36,7 @@ This OpenNeuro dataset specifically contains just the **Neuroimaging (3T MRI)** 
 For researchers seeking access to associated PAN datasets including MindCrowd tests, demographic and biometric measures, corresponding cognitive scores, Garmin wearable data, blood/CSF biomarkers and other derived biomarker panels, carotid ultrasound metrics, derived MRI measures, assessments and surveys and much more please request access via the PAN centralized data portal at [https://precisionagingnetwork.org/access-pan-study-data-for-research/](https://precisionagingnetwork.org/access-pan-study-data-for-research/). In addition to the datasets mentioned, detailed Standard Operating Protocols (SOP) governing data collection are also available on the portal as well as protocols used for obtained deriving measures.
 
 ### Participant Demographic Information
-The `participants.tsv` file provides information on `age`, `sex` and `handedness`. These have been inferred from participant's original registration data. The age provided in the file is an estimate of the participants age at the time of their baseline scan (`ses-01`). The age of the participant at any repeat sessions ('ses-02'etc) or follow-up sessions (`ses-follow01` etc) can be estimated from the date of the scan (available in `scans.tsv` file) and the approximate baseline scan date (provided in the participants.tsv file)
+The `participants.tsv` file provides information on `age`, `sex` and `handedness`. These have been inferred from participant's original registration data. The age provided in the file is an estimate of the participants age at the time of their baseline scan (`ses-01`). The age of the participant at any repeat sessions (`ses-02` etc.) or follow-up sessions (`ses-follow01` etc) can be estimated from the date of the scan (`acq_time` field in the `{sub}_{ses}_scans.tsv` file) and the approximate baseline scan date (`baseline_scan_datetime` field in the `participants.tsv` file).
 
 
 ### MRI Derived Measures and Processing Protocols 
@@ -83,11 +86,6 @@ There have been three scanner upgrades to date:
 Dedicated field maps were not acquired for the ASL or resting-state fMRI acquisitions, in order to maximize the number of MRI contrasts collected within the available scan time.
 
 Field maps for these acquisitions were instead derived from two sources: the multi-echo T2starw acquisition, represented by `magnitude1`, `magnitude2`, `phase1`, and `phase2`, and the diffusion/reverse phase-encoded diffusion MRI acquisitions, represented by `acq-fmri_dir-AP_epi` and `acq-fmri_dir-PA_epi`.
-
-### Incorrect Phase Encoding Direction Labels in BIDS names
-Please note that the "AP" and "PA" labels in the `fmap` folder are unfortunately incorrect and do not reflect the actual physical Phase-Encoding (PE) direction of the field maps. This should not matter for most of the standard preprocessing pipelines run. Tools like `TOPUP` just need the AP and PA images to be clearly labelled as having opposite PE directions in their metadata. It is hoped that this can be corrected in a future release. 
-
----
 
 ## License and Terms of Use
 The MRI data hosted on this site is made available without restriction under the [Creative Commons Zero (CC0) v1.0 License](https://creativecommons.org/publicdomain/zero/1.0/).

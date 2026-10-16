@@ -64,7 +64,7 @@
     "ConversionSoftware": "dcm2niix",
     "ConversionSoftwareVersion": "v1.0.20220720",
     "Dcm2bidsVersion": "2.1.6",
-    "PhaseEncodingDirection": "j",
+    "PhaseEncodingDirection": "j-",
     "SliceTiming": [
         0.0,
         1.9304,

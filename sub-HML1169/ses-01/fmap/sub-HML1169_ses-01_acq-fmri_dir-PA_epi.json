@@ -67,7 +67,7 @@
     "IntendedFor": [
         "ses-01/func/sub-HML1169_ses-01_task-rest_bold.nii.gz"
     ],
-    "PhaseEncodingDirection": "j-",
+    "PhaseEncodingDirection": "j",
     "SliceTiming": [
         0.0,
         1.9304,
