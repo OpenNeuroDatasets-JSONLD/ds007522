@@ -1,7 +1,7 @@
 # Precision Aging Network (PAN): Closing the Gap Between Cognitive Healthspan and Human Lifespan
 
-## Important Notice - please use only Release 3.0.0 and later of this repository
-On 12 October 2026 it was noticed that the PhaseEncodingDirection" metadata was incorrect in the Diffusion and the reverse-phase encoded Baltimore scans. The affected acquisitions are `dwi/dwi`, `fmap/acq-fmri_dir-AP` which have now been changed from `j` to `j-`; and the `fmap/dir-PA_epi` and `fmap/acq-fmri_dir-AP` acquisitions which have been changed from `j-` to `j`. If the `fmap/acq-fmri_dir-AP` and `fmap/acq-fmri_dir-PA` fieldmaps were used for correcting the fmri or asl data using sdcflow (e.g. fmriprep, aslprep) then the distortion correction will likely have failed. The diffusion susceptibility distortion correction is however unaffected by this mistake due to the symmetry of the diffusion and reverse-phase encoded acquisitions. Please use only Release 3.0.0 and later of this repository.
+### Important Notice - please use only Release 3.0.0 and later of this repository
+> On 12 October 2026 it was noticed that the `PhaseEncodingDirection` metadata was incorrect in the Diffusion and the reverse-phase encoded Philips scans from the `Baltimore` site. The affected acquisitions are `dwi/dwi`, `fmap/acq-fmri_dir-AP` which have now been changed from `j` to `j-`; and the `fmap/dir-PA_epi` and `fmap/acq-fmri_dir-PA` acquisitions which have been changed from `j-` to `j`. If the `fmap/acq-fmri_dir-AP` and `fmap/acq-fmri_dir-PA` fieldmaps were used for correcting the fmri or asl data using `sdcflow` (e.g. through fmriprep or aslprep) then the distortion correction will likely have failed. The diffusion susceptibility distortion correction should however be unaffected by this mistake due to the symmetry of the diffusion and reverse-phase encoded acquisitions. This issue has been resolved as of Release 3.0.0.
 
 ## Contact
 For additional information, please contact:
